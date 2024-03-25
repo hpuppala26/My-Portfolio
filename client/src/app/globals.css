@@ -1,0 +1,137 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  animation: appear 1.5s ease-in-out forwards; 
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: disappear 1.5s ease-in-out;
+}
+.divider {
+  margin: -8px;
+}
+.ant-divider-horizontal{
+  margin-top: -16px !important
+}
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: filter 01s ease;
+}
+img:hover {
+ 
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 6.5s;
+  /* animation-timing-function: steps(40, end); */
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../assets/fonts/Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../assets/fonts/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url('../assets/fonts/Lato-Italic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  font-family: 'Lato';
+}
+
+/* In your styles.css or equivalent */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.resume-b {
+  animation: slideUp .7s ease-out;
+}
+.projects-b {
+  animation: slideUp 1.2s ease-out;
+}
+.contact-b {
+  animation: slideUp 1.7s ease-out;
+}
+
+.profile-pic {
+  animation: slideLeft 1.5s ease-out;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* TODO: Add support for other browsers */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(226, 219, 219);
+  outline: 0 solid rgb(242, 246, 250);
+}

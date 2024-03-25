@@ -1,0 +1,42 @@
+export const projects = [
+  {
+    img: "https://user-images.githubusercontent.com/26500550/146297406-eb97f213-2380-48fb-a7ae-86b54965199c.png",
+    name: "CineSquare",
+    desc: "Developed a Movie Ticket Booking web application utilizing React for the frontend and Django for the backend. Successfully hosted the application on an EC2 AWS instance, showcasing proficiency in full-stack development, deployment, and integration of key technologies.",
+    git: "https://github.com/gopinathsjsu/teamproject-tech-titans",
+    start_date: "9-30-2023",
+    end_date: "12-1-2023",
+  },
+  {
+    img: "https://previews.123rf.com/images/opka/opka1604/opka160400001/56863932-house-search-concept.jpg",
+    name: "Accomate",
+    desc: "Developing a web application to assist students in finding accommodations near universities, employing React, Redux, Tailwind, and Flask. I've seamlessly integrated Google Auth for enhanced security. Embracing this opportunity to learn and expand my skill set.",
+    git: "https://github.com/msavinash/point2",
+    start_date: "10-10-2023",
+    end_date: "",
+  },
+  {
+    img: "https://indatalabs.com/wp-content/uploads/2022/03/activity-recognition-sports.jpeg",
+    name: "Pose Estimation for Activity Tracking and Medical Applications",
+    desc: "Revamped OpenPose for 48% efficiency boost in posture recognition, achieved top performance with a 10,000-tuple dataset and TensorFlow's object detection API, reaching 89.9% accuracy in real-time object classification.",
+    git: "",
+    start_date: "01-06-2021",
+    end_date: "12-19-2021",
+  },
+  {
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7UgWHl3IfqhAR5NFAnGXszxNyv6yrnsuuLFgQcmNZdJO_s2yHSg1GUMi0dsuY4gmbtYA&usqp=CAU",
+    name: "Medical Record Management System",
+    desc: "Built a robust Medical Record Management System using the MERN stack. Enabled secure storage of 100+ medical reports, enhanced functionality with Twilio's SMS API for medication reminders and a doctors' forum.",
+    git: "",
+    start_date: "01-08-2020",
+    end_date: "04-07-2020",
+  },
+  {
+    img: "https://marvel-b1-cdn.bc0a.com/f00000000290269/www.riversideonline.com/-/media/patients-and-visitors/healthy-you/three-ways-your-blood-donation-helps.ashx",
+    name: "Blood Care",
+    desc: "Created a full-stack application with ReactJs, Node.js and MongoDB. Seamlessly integrated data from 100+ blood banks. Led frontend architecture for strong user authentication and real-time data retrieval, crafting an efficient and user-friendly platform.",
+    git: "",
+    start_date: "08-13-2019",
+    end_date: "12-14-2019",
+  },
+];
